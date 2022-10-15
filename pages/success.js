@@ -14,6 +14,7 @@ const success = () => {
         setTotalQuantities(0)
         runFireworks();
         
+        
     }, []);
 
     return (
