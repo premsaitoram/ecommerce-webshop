@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
 import { BsBagCheckFill } from 'react-icons/bs';
@@ -33,7 +34,7 @@ const success = () => {
                         prem@email.com
                     </a>
                 </p>
-                <Link href="/">
+                <Link href="/" passHref>
                     <button type="button" width="300px" className='btn'>
                         Continue Shopping
 

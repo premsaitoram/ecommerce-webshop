@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react'
 import Link from 'next/link';
 import { urlFor } from '../lib/client';
@@ -12,7 +13,7 @@ const HeroBanner = ({heroBanner}) => {
           <img src={urlFor(heroBanner.image)} alt='' className='hero-banner-image' />
           
           <div>
-            <Link href={`/product/${heroBanner.product}`}>
+            <Link href={`/product/${heroBanner.product}`} passHref>
                 <button type='button'>{heroBanner.buttonText}</button>   
             </Link>
             <div className='desc'>
